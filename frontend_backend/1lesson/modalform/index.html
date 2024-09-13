@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма заявки</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Разработка веб-приложения</h1>
+    <p>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</p>
+
+    <!-- Блок для вывода ошибок -->
+    <div id="errorMessages" style="color: red; display: none;"></div>
+
+    <form id="applicationForm">
+      <div class="form-group">
+        <label for="name">Как вас зовут</label>
+        <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Ваш e-mail</label>
+        <input type="email" id="email" name="email" placeholder="test@mail.ru" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 919 999 99 99" required
+          pattern="^\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}$">
+      </div>
+
+      <div class="form-group">
+        <label for="country">Страна</label>
+        <select id="country" name="country" required>
+          <option value="Россия">Россия</option>
+          <option value="Беларусь">Беларусь</option>
+          <option value="Казахстан">Казахстан</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Дата</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Комментарий</label>
+        <textarea id="comment" name="comment" rows="4" placeholder="Ваш комментарий..."></textarea>
+      </div>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">Согласен на обработку моих персональных данных</label>
+      </div>
+
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
