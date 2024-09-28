@@ -105,5 +105,6 @@ results = {
     'Расшифрованный текст (двойной)': decoded_double,
 }
 
-results_df = pd.DataFrame(list(results.items()), columns=['Metric', 'Value'])
-import ace_tools_open as tools; tools.display_dataframe_to_user(name="Text Compression Results", dataframe=results_df)
+pd.set_option('display.max_colwidth', None)
+results_df = pd.DataFrame(list(results.items()), columns=['Условие', 'Значение'])
+import ace_tools_open as tools; tools.display_dataframe_to_user(name="Результат выполнения программы", dataframe=results_df)
