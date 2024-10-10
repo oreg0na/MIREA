@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: red;
+}
+    
+body {
+    padding: 10px 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+.block {
+    display: flex;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.header {
+    border: 2px solid black;
+}
+
+.end {
+    align-items: flex-end;
+}
+
+.center {
+    align-items: center;
+}
+
+.small-img {
+    width: 30px;
+    height: 30px;
+}
+
+.header > *:not(:last-child) {
+    border-bottom: 2px solid black;
+}
+
+.header-block {
+    padding: 10px 20px;
+}
+
+.header-block__navigation {
+    padding: 15px 20px;
+    gap: 10px;
+}
+
+.main {
+    flex: 1;
+}
+
+.main-block__navigation {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 20px 10px;
+}
+
+.main-block__navigation > *:not(:first-child) {
+    margin-top: 10px;
+}
+
+.main-block__content {
+    flex: 1;
+    border-right: 2px solid black;
+    padding: 20px;
+}
+
+.content-title {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.content-title > img {
+    width: 200px;
+    border: 2px solid black;
+}
+
+.content-card {
+    border: 2px solid black;
+    padding: 10px;
+    width: 200px;
+}
+
+.content-card > *:last-child {
+    margin-top: 10px;
+}
+
+.content-block > * {
+    margin-top: 20px;
+}
+
+.footer {
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.images > *:first-child {
+    margin-right: 20px;
+}
+
+#modal:target {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal {
+    display: none;
+}
+
+.modal-content {
+    padding: 30px;
+    background-color: white;
+    border: 2px solid black;
+    max-width: 500px;
+}
+
+.modal-content > *:not(:first-child) {
+    margin-top: 30px;
+}
+
+.modal-inputs > *:not(:first-child) {
+    margin-top: 10px;
+}
+
+.modal-input-block {
+    justify-content: space-between;
+}
+
+.modal-check-block > *:first-child {
+    margin-right: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
