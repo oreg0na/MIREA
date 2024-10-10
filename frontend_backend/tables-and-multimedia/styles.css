@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: red;
+}
+
+body {
+    padding: 10px 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+.block {
+    display: flex;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.header {
+    border: 2px solid black;
+}
+
+.end {
+    align-items: flex-end;
+}
+
+.center {
+    align-items: center;
+}
+
+.small-img {
+    width: 30px;
+    height: 30px;
+}
+
+.header > *:not(:last-child) {
+    border-bottom: 2px solid black;
+}
+
+.header-block {
+    padding: 10px 20px;
+}
+
+.header-block__navigation {
+    padding: 15px 20px;
+    gap: 20px;
+}
+
+.main {
+    flex: 1;
+}
+
+.main-block__navigation {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 20px 10px;
+}
+
+.main-block__navigation > *:not(:first-child) {
+    margin-top: 10px;
+}
+
+.main-block__content {
+    flex: 1;
+    border-right: 2px solid black;
+    padding: 20px;
+}
+
+.content-title > img {
+    width: 200px;
+    border: 2px solid black;
+}
+
+.small-img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-block__content {
+    flex: 1;
+    border-right: 2px solid black;
+    padding: 20px;
+}
+
+.main-block_block {
+    margin-top: 30px;
+}
+
+.main-block_block > *:nth-child(2) {
+    margin-top: 10px;
+}
+
+.content-block > * {
+    margin-top: 20px;
+}
+
+.footer {
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.images > *:first-child {
+    margin-right: 20px;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table thead tr {
+    background-color: gray;
+}
+
+table > tbody,
+thead > tr > th,
+td {
+    padding: 5px;
+}
+
+table tbody .odd {
+    background-color: lightgray;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    padding: 10px 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+.block {
+    display: flex;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.header {
+    border: 2px solid black;
+}
+
+.end {
+    align-items: flex-end;
+}
+
+.center {
+    align-items: center;
+}
+
+.small-img {
+    width: 30px;
+    height: 30px;
+}
+
+.header > *:not(:last-child) {
+    border-bottom: 2px solid black;
+}
+
+.header-block {
+    padding: 10px 20px;
+}
+
+.header-block__navigation {
+    padding: 15px 20px;
+    gap: 20px;
+}
+
+.main {
+    flex: 1;
+}
+
+.main-block__navigation {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 20px 10px;
+}
+
+.main-block__navigation > *:not(:first-child) {
+    margin-top: 10px;
+}
+
+.main-block__content {
+    flex: 1;
+    border-right: 2px solid black;
+    padding: 20px;
+}
+
+.main-block_block {
+    margin-top: 30px;
+}
+
+.main-block_block > *:nth-child(2) {
+    margin-top: 10px;
+}
+
+.content-title > img {
+    width: 200px;
+    border: 2px solid black;
+}
+
+.content-block > * {
+    margin-top: 20px;
+}
+
+.footer {
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.images > *:first-child {
+    margin-right: 20px;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table thead tr {
+    background-color: gray;
+}
+
+table > tbody,
+thead > tr > th,
+td {
+    padding: 5px;
+}
+
+table tbody .odd {
+    background-color: lightgray;
+}
